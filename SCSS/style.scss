@@ -1,0 +1,231 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Ubuntu';
+}
+
+.header{
+    margin:0 auto;
+    max-width: 1240px;
+    padding: 1.5em 2.5em;
+    &__inner{
+        text-align: center;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        &--left{
+            position: relative;
+            min-width: 270px;
+            text-align: left;
+            padding-right: 30px;
+            .info:not(:first-child){
+                padding-top: 8px;
+            }
+            .info-name{
+                left: -2px;
+                font-size: 46px;
+                color:#4685c6;
+            }
+            .info-title{
+                font-size:24px;
+                line-height: 26px;
+                min-height: 24px;
+                color:#666766;
+            }
+        }
+        &--mid{
+            text-align: center;
+            .avatar{
+                width: 160px;
+                height: 160px;
+                min-width: 160px;
+                max-width: 190px;
+                min-height: 160px;
+                max-height: 190px;
+                border: 1px solid #d3d3d3;
+                border-radius: 50%;
+                background: #4685c6;
+            }
+        }
+        &--right{
+            min-width: 270px;
+            padding-left: 30px;
+            position: relative;
+            text-align: right;
+            line-height: 1.5;
+            padding-right: 30px;
+
+            .contact:not(:first-child){
+                padding-top:8px;
+            }
+            img{
+                position: absolute;
+                right: 0;
+                width: 20px;
+                height: 20px;
+            }
+            a{
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.main{
+    margin:0 auto;
+    max-width: 1240px;
+    padding: 2.5em 2.5em;
+    .section{
+        margin-bottom: 2.5em;
+        &__title{
+            text-align: center;
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase;
+            color:#4685c6;
+            margin-bottom: 0.5em;
+            &--border{
+                border: 1px solid #4685c6;
+                border-radius: 1rem;
+            }
+        }
+        .item-bullet{
+            position: absolute;
+            left: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #4685c6;
+        }
+        &.skills{
+            .section__content{
+                display: flex;
+                flex-wrap: wrap;
+                .skill-group{
+                    background:#90b6dd;
+                    border-radius: .2em;
+                    margin:0 10px 10px 0;
+                    padding: 6px 10px;
+                    color:white;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        &.education{
+            .section__content{
+                .edu-role{
+                    font-size: 24px;
+                    min-height: 24px;
+                    line-height: 26px;
+                    font-weight: 700;
+                }
+                .edu-place{
+                    font-size: 24px;
+                    min-height: 24px;
+                    line-height: 26px;
+                }
+                .edu-period{
+                    display:flex;
+                    color: #666766;
+                    font-size: 16px;
+                    min-height: 16px;
+                    line-height: 18px;
+                    margin:0 auto;
+                    justify-content: space-between;
+                    font-style: italic;
+                    &--left{
+                        text-align: left;
+                    }
+                    &--right{
+                        text-align: right;
+                    }
+                }
+                .edu-courses{
+                    .course{
+                        &__header{
+                            font-style: italic;
+                            font-size: 16px;
+                            min-height: 16px;
+                            line-height: 18px;
+                            color: #666766;
+                        }
+                        &-group{
+                            position: relative;
+                            .course-name{
+                                line-height: 20px;
+                                padding-left: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.per-projects{
+            .section__content{
+                .project{
+                    &-group{
+                        padding-bottom: 4px;
+                        margin-bottom: 12px;
+                    }
+                    &__header{
+                        font-size: 20px;
+                        min-height: 20px;
+                        line-height: 22px;
+                    }
+                    &__desc{
+                        font-size: 16px;
+                        min-height: 16px;
+                        line-height: 18px;
+                        .desc-group{
+                            position: relative;
+                            .item-desc{
+                                line-height: 20px;
+                                padding-left: 30px;
+                                a{
+                                    text-decoration: none;
+                                    color: #4685c6;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.languages{
+            .section__content{
+                display: flex;
+                .lang-group{
+                    width: 33.3%;
+                    .lang__header{
+                        font-size: 18px;
+                        min-height: 18px;
+                        line-height: 20px;
+                    }
+                    .lang__desc{
+                        color: #4685c6;
+                        font-style: italic;
+                        font-size: 16px;
+                        min-height: 16px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        &.interests{
+            .section__content{
+                display: flex;
+                flex-wrap: wrap;
+                .interest-group{
+                    border: 2px solid #b2b2b2;
+                    border-radius: 6px;
+                    padding: 6px 14px;
+                    margin: 0 10px 8px 0px;
+                }
+            }
+        }
+    }
+}
