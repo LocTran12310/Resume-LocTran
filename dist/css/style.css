@@ -155,11 +155,11 @@ body {
 .main {
   margin: 0 auto;
   max-width: 1240px;
-  padding: 1.5em 2em;
+  padding: 0 2em 1.5em 2em;
 }
 
 .main .section {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .main .section__title {
