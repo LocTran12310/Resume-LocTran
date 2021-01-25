@@ -9,7 +9,7 @@ body {
   font-family: 'Ubuntu';
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .header__info-about {
     width: 40%;
   }
@@ -18,6 +18,19 @@ body {
   }
   .header__info-contact {
     width: 40%;
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  .header__info-about {
+    width: 37.5%;
+  }
+  .header__info-photo {
+    width: 25%;
+  }
+  .header__info-contact {
+    width: 37.5%;
+    padding-left: 0 !important;
   }
 }
 
@@ -119,9 +132,12 @@ body {
   max-width: 190px;
   min-height: 160px;
   max-height: 190px;
-  border: 2px solid #d3d3d3;
+  border: 2px solid #4685c6;
   border-radius: 50%;
-  background: #fff;
+  -webkit-box-shadow: 0px 0px 7px #68aaec;
+          box-shadow: 0px 0px 7px #68aaec;
+  background-image: url("/dist/img/Loc.jpg");
+  background-size: cover;
 }
 
 .header__info-contact {
